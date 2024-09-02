@@ -20,6 +20,7 @@ export const Form = styled.form`
   max-width: 700px;
   margin-top: 30px;
   display: flex;
+
   input {
     flex: 1;
     padding: 10px 15px;
@@ -28,10 +29,15 @@ export const Form = styled.form`
   }
 `;
 
-export const SubmitButton = styled.button`
+export const SubmitButton = styled.button.attrs({
+  type: "submit",
+})`
   background: #0d2636;
   border: 0;
   padding: 0 15px;
   margin-left: 10px;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
